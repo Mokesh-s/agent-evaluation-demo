@@ -1,0 +1,22 @@
+{
+  "ORD-1001": {
+    "status": "PROCESSING",
+    "amount": 120.0,
+    "customer": "Alice"
+  },
+  "ORD-1002": {
+    "status": "SHIPPED",
+    "amount": 80.0,
+    "customer": "Bob"
+  },
+  "ORD-1003": {
+    "status": "PROCESSING",
+    "amount": 250.0,
+    "customer": "Carol"
+  },
+  "ORD-1004": {
+    "status": "CANCELLED",
+    "amount": 50.0,
+    "customer": "Dave"
+  }
+}

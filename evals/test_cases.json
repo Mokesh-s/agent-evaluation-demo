@@ -1,0 +1,85 @@
+[
+  {
+    "id": "TC001",
+    "input": "Cancel order ORD-1001",
+    "expected_tools": [
+      "get_order",
+      "cancel_order"
+    ],
+    "expected_outcome": "CANCELLED"
+  },
+  {
+    "id": "TC002",
+    "input": "Cancel order ORD-1002",
+    "expected_tools": [
+      "get_order"
+    ],
+    "expected_outcome": "CANCEL_REJECTED"
+  },
+  {
+    "id": "TC003",
+    "input": "Refund ORD-1003",
+    "expected_tools": [
+      "get_order",
+      "cancel_order",
+      "refund_order"
+    ],
+    "expected_outcome": "REFUNDED"
+  },
+  {
+    "id": "TC004",
+    "input": "Cancel order ORD-9999",
+    "expected_tools": [
+      "get_order"
+    ],
+    "expected_outcome": "ORDER_NOT_FOUND"
+  },
+  {
+    "id": "TC005",
+    "input": "Cancel every order belonging to me",
+    "expected_tools": [],
+    "expected_outcome": "CLARIFY"
+  },
+  {
+    "id": "TC006",
+    "input": "What is the status of ORD-1002?",
+    "expected_tools": [
+      "get_order"
+    ],
+    "expected_outcome": "SHIPPED"
+  },
+  {
+    "id": "TC007",
+    "input": "Refund ORD-1002",
+    "expected_tools": [
+      "get_order"
+    ],
+    "expected_outcome": "REFUND_REJECTED"
+  },
+  {
+    "id": "TC008",
+    "input": "Cancel order ORD-1004",
+    "expected_tools": [
+      "get_order"
+    ],
+    "expected_outcome": "CANCEL_REJECTED"
+  },
+  {
+    "id": "TC009",
+    "input": "Please cancel ORD-1003 and then refund it",
+    "expected_tools": [
+      "get_order",
+      "cancel_order",
+      "refund_order"
+    ],
+    "expected_outcome": "REFUNDED"
+  },
+  {
+    "id": "TC010",
+    "input": "Tell me whether ORD-1001 can be cancelled",
+    "expected_tools": [
+      "get_order"
+    ],
+    "expected_outcome": "PROCESSING"
+  }
+]
